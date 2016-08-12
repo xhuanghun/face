@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView 
+        android:id="@+id/admin_comp_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/title"
+        android:text="公司名称"
+        />
+    
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/admin_comp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/admin_comp_name"
+        android:layout_marginTop="80dp"
+        />
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/admin_work"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/admin_comp"
+        />
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/admin_scan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/admin_work"
+        />
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_scan"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_acq"
+        android:textColor="#FFFFFF"
+        android:text="退出登录"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

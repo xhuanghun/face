@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <ImageView
+        android:id="@+id/user_reg_company_bg"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/toolbar" />
+
+    <ImageView
+        android:id="@+id/user_reg_username_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+       	android:layout_below="@+id/user_reg_company_bg"
+        android:background="@drawable/toolbar" />
+
+    <ImageView
+        android:id="@+id/user_reg_password_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_reg_username_bg"
+        android:background="@drawable/toolbar" />
+ 
+    <ImageView 
+        android:id="@+id/user_reg_email_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_reg_password_bg"
+        android:background="@drawable/toolbar"/>
+    
+  
+    
+    <ImageView
+        android:id="@+id/user_reg_company_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/user_reg_company_bg"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/user_reg_company_bg"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/username" />
+    
+    <TextView
+        android:id="@+id/user_reg_company_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_reg_company_icon"
+        android:layout_alignTop="@+id/user_reg_company_bg"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="公司码" />
+    
+    <EditText
+        android:id="@+id/user_reg_company_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_reg_company_label"
+        android:layout_alignBottom="@+id/user_reg_company_label"
+        android:layout_alignLeft="@+id/user_reg_email_text"
+        android:ems="18"
+        android:background="@null"
+        android:hint="请输入公司注册码"
+        >
+       
+    </EditText>
+    
+    <ImageView
+        android:id="@+id/user_reg_username_icon"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/user_reg_username_bg"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/user_reg_username_bg"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/username" />
+
+    <TextView
+        android:id="@+id/user_reg_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_reg_username_icon"
+        android:layout_alignTop="@+id/user_reg_username_bg"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="邮    箱" />
+    
+	<EditText
+        android:id="@+id/user_reg_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_reg_username_label"
+        android:layout_alignBottom="@+id/user_reg_username_label"
+        android:layout_toRightOf="@+id/user_reg_username_label"
+        android:layout_marginLeft="10dp"
+        android:ems="18"
+        android:background="@null"
+        android:hint="请输入邮箱"
+        >
+        
+       
+    </EditText>
+    
+    <ImageView
+        android:id="@+id/user_reg_password_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/user_reg_username_icon"
+        android:layout_alignTop="@+id/user_reg_password_bg"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/user_reg_password_bg"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/username" />
+    
+    <TextView
+        android:id="@+id/user_reg_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_reg_password_icon"
+        android:layout_alignTop="@+id/user_reg_password_bg"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="姓    名" />
+    
+    <EditText
+        android:id="@+id/user_reg_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_reg_password_label"
+        android:layout_alignBottom="@+id/user_reg_password_label"
+        android:layout_alignLeft="@+id/user_reg_email_text"
+        android:ems="18"
+        android:background="@null"
+        android:hint="请输入姓名"
+        >
+       
+    </EditText>
+
+	<ImageView
+        android:id="@+id/user_reg_email_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/user_reg_email_bg"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/user_reg_email_bg"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/username" />
+    
+    <TextView
+        android:id="@+id/user_reg_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_reg_email_icon"
+        android:layout_alignTop="@+id/user_reg_email_bg"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="手机号" />
+    
+    <EditText
+        android:id="@+id/user_reg_phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_reg_email_label"
+        android:layout_alignBottom="@+id/user_reg_email_label"
+        android:layout_alignLeft="@+id/user_reg_email_text"
+        android:ems="18"
+        android:background="@null"
+        android:inputType="phone"
+        android:hint="请输入手机号">
+       
+    </EditText>
+   
+    <ImageButton
+        android:id="@+id/user_myclearbutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/user_reg_email_text"
+        android:layout_alignBottom="@+id/user_reg_email_text"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/clear" />
+    
+     <ImageButton
+        android:id="@+id/user_myclearbutton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/user_reg_name_text"
+        android:layout_alignBottom="@+id/user_reg_name_text"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/clear" />
+     
+     <ImageButton
+        android:id="@+id/user_myclearbutton_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/user_reg_company_text"
+        android:layout_alignBottom="@+id/user_reg_company_text"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/clear" />
+     
+     <ImageButton
+        android:id="@+id/user_myclearbutton_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/user_reg_phone_text"
+        android:layout_alignBottom="@+id/user_reg_phone_text"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/clear" />
+     
+  
+    
+    <TextView
+        android:id="@+id/user_reg_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_reg_email_bg"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="点击下一步代表已阅读并同意《xxx协议》" />
+	
+</RelativeLayout>

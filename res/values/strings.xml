@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">人脸考勤</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="open_location">请开启定位服务...</string>
+    <string name="open_wifi">请开启Wifi...</string>
+    <string name="network_available">当前有网络连接</string>
+    <string name="network_unavailable">当前网络不可用</string>
+    <string name="comp_reg_text">\t\t\t是否同意系统获取GPS位置信息，若拒绝，则无法完成注册！</string>
+</resources>

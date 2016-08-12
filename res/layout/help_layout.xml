@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.changhong.utils.MyImageTextButton2 
+        android:id="@+id/feedback0_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        />
+
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/function_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/feedback0_btn"
+        />
+    
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/update_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/feedback0_btn"
+        />
+    
+    
+     <ImageView 
+        android:id="@+id/about_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/function_btn"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_icon"
+        />
+    
+    <WebView 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/webView"/>
+    
+
+</RelativeLayout>

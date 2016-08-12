@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/othlog_username_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/toolbar" />
+
+    <ImageView
+        android:id="@+id/othlog_password_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/othlog_username_bg"
+        android:background="@drawable/toolbar" />
+
+    <ImageView
+        android:id="@+id/othlog_username_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/othlog_username_bg"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/othlog_username_bg"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/username" />
+
+    <TextView
+        android:id="@+id/othlog_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/othlog_username_icon"
+        android:layout_alignTop="@+id/othlog_username_bg"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="用户名" />
+
+    <ImageView
+        android:id="@+id/othlog_password_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/othlog_username_icon"
+        android:layout_alignTop="@+id/othlog_password_bg"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/othlog_password_bg"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/password" />
+    
+    <TextView
+        android:id="@+id/othlog_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/othlog_password_icon"
+        android:layout_alignTop="@+id/othlog_password_bg"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="密 码" />
+
+    <EditText
+        android:id="@+id/othlog_username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/othlog_username_label"
+        android:layout_alignBottom="@+id/othlog_username_label"
+        android:layout_toRightOf="@+id/othlog_username_label"
+        android:layout_marginLeft="10dp"
+        android:ems="18"
+        android:background="@null"
+        android:hint="请输入员工编号"
+        android:inputType="numberDecimal" >
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/othlog_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/othlog_password_label"
+        android:layout_alignBottom="@+id/othlog_password_label"
+        android:layout_alignLeft="@+id/othlog_username_text"
+        android:ems="18"
+        android:background="@null"
+        android:hint="请输入密码"
+        android:inputType="textPassword" >
+       
+    </EditText>
+    
+    <ImageButton
+        android:id="@+id/myclearbutton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/othlog_username_text"
+        android:layout_alignBottom="@+id/othlog_username_text"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/clear" />
+    
+    <ImageButton
+        android:id="@+id/myclearbutton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/othlog_password_text"
+        android:layout_alignBottom="@+id/othlog_password_text"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/clear" />
+
+    <Button
+        android:id="@+id/othlog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/othlog_password_bg"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/button_checkin"
+        android:text="获取信息" />
+
+</RelativeLayout>

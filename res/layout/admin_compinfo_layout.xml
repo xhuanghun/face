@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/comp_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        />
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/comp_info_connctor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/comp_info_name"
+        />
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/comp_info_tel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/comp_info_connctor"
+        />
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/comp_info_gps"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/comp_info_tel"
+        />
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/comp_info_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/comp_info_gps"
+        />
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/comp_info_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/comp_info_email"
+        />
+
+</RelativeLayout>

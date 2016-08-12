@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <TextView 
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="照    片"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="姓    名"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="邮    箱"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="审    核"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <ListView 
+        android:id="@+id/admin_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:footerDividersEnabled="false"
+        ></ListView>
+</LinearLayout>

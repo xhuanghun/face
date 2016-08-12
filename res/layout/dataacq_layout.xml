@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/dataacq_note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="请把脸对准摄像头" />
+        
+        <ProgressBar
+            android:id="@+id/dataacq_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataacq_note_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+ 
+        <TextView
+            android:id="@+id/dataacq_prog_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataacq_note_text"
+            android:layout_marginTop="5dp"
+            android:layout_alignRight="@+id/dataacq_bar"
+            android:textSize="12sp"
+            android:ems="2"
+            android:text="/10" />
+        
+ 		<TextView
+            android:id="@+id/dataacq_prog_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_alignBaseline="@+id/dataacq_prog_text1"
+        	android:layout_alignBottom="@+id/dataacq_prog_text1"
+        	android:layout_toLeftOf="@+id/dataacq_prog_text1"
+            android:textSize="18sp"
+            android:textColor="#0000FF"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:ems="2"
+            android:text="0" />       
+
+        <SurfaceView
+            android:id="@+id/dataacq_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataacq_bar"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/camera" />
+
+        <Button
+            android:id="@+id/startacq_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dataacq_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+        	android:layout_marginRight="10dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="10dp"
+            android:background="@drawable/button_acq"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:text="开始采集" />
+        
+        <com.changhong.utils.FaceMarkView 
+            android:id="@+id/reg_face_mark_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+</RelativeLayout>

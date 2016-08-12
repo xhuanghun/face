@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/facereg_note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="请把脸对准摄像头" />
+        
+             
+
+        <SurfaceView
+            android:id="@+id/facereg_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facereg_note_text"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/camera" />
+
+        <Button
+            android:id="@+id/facereg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facereg_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+        	android:layout_marginRight="10dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="10dp"
+            android:background="@drawable/button_acq"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:text="开始注册" />
+        
+        <com.changhong.utils.FaceMarkView 
+            android:id="@+id/reg_face_mark_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+</RelativeLayout>

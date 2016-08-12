@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/myinfo_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/toolbar" />
+    
+    <ImageView
+        android:id="@+id/myinfo_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/myinfo_bg1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+         />
+    
+    <TextView
+        android:id="@+id/myinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myinfo_bg1"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/myinfo_icon"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="张三" />
+    
+    <TextView
+        android:id="@+id/myinfo_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/myinfo_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/myinfo_name"
+        android:textSize="13sp"
+        android:text="技术中心 普通员工" />
+
+    <ImageView
+        android:id="@+id/myinfo_arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/myinfo_bg1"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/arrow" />
+    
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/myinfo_help"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/myinfo_bg1"
+        android:layout_marginTop="18dp"/>
+    
+    <com.changhong.utils.MyImageTextButton2
+        android:id="@+id/myinfo_about"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/myinfo_help"/>
+    
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/myinfo_about"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:background="@drawable/button_acq"
+        android:textColor="#FFFFFF"
+        android:text="退出登录"
+        android:textSize="20sp"/>
+
+	<LinearLayout  
+		android:id="@+id/myinfo_tabviewgroup"  
+		android:layout_width="fill_parent"  
+		android:layout_height="50dp"  
+		android:layout_alignParentBottom="true"  
+		android:gravity="center_horizontal" 
+		android:orientation="horizontal" >  
+		<com.changhong.utils.MyImageTextButton
+		    android:id="@+id/myinfo_checkin_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+		<com.changhong.utils.MyImageTextButton
+		    android:id="@+id/myinfo_record_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+		<com.changhong.utils.MyImageTextButton
+		    android:id="@+id/myinfo_myinfo_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>	        
+	</LinearLayout>  
+	
+
+
+</RelativeLayout>
